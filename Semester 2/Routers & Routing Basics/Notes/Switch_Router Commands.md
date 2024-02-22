@@ -51,6 +51,35 @@
 	- Any mode higher than Host Configuration Mode
  		- end
 
+## Verify SSH (Secure Shell) Support
+	- Privileged Executive Mode
+ 		- show ip ssh
+
+## Configure IP domain-name
+	- Privileged Executive Mode
+ 		- ip domain-name *domain name*
+
+## Move to SSH (Seure Shell) Version Two
+	- Global Configuration Mode
+ 		- ip ssh version 2
+
+## Enable SSH server and generate RSA key pairs
+	- Global Configuration Mode
+ 		- crypto key generate rsa
+
+## Configure SSH (Secure Shell) Username and Password
+	- Global Configuration Mode
+ 		- username *username* secret *password*
+
+## Enter line configuration mode for lines 0-15
+	- Global Configuration Mode
+ 		- line vty 0 15
+
+## Enable SSH on current lines
+	= Line Configuration Mode
+ 		- transport input ssh
+   		- login local
+
 ## View status of ipv4 interfaces
 	- Privileged Executive Mode
  		- show ip interface brief
