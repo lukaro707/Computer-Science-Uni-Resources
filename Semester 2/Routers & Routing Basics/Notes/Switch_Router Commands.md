@@ -20,7 +20,7 @@
 		- inteface *interface*
 		
 # Set the ipv4 address and subnet mask of the current interface
-  - Interface Configuration Mode
+	- Interface Configuration Mode
 		- ip address *ip address* *subnet mask*
 
 # Set the ipv6 address and subnet mask (in / suffix form) of the current interface
