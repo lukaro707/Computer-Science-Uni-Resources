@@ -23,9 +23,9 @@
 	=Interface Configuration Mode
 		-ip address *ip address* *subnet mask*
 
--Set the ipv6 address and subnet mask (in / suffix form) of the current interface
+-Set the ipv6 address and subnet mask (in  suffix form) of the current interface
 	-Interface Configuration Mode
-		=ipv6 address *ipv6 address*/*subnet mask*
+		=ipv6 address *ipv6 address* *subnet mask*
 		
 -View position of boot environment variable
 	-Boot Loader Mode
