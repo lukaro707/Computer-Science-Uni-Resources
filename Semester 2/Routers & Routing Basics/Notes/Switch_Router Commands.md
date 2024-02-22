@@ -1,6 +1,8 @@
 Command Syntax:
--command *parameter*
-	-Description of command and parameters
+-Description of command and parameters
+	-Command pre-requisites (mode, device, etc.)
+		-command *parameter*
 
--boot *url*
-	-
+-Change the path of the boot environment variable to *file path*
+	-Host Configuration Mode
+		-boot *file path*
