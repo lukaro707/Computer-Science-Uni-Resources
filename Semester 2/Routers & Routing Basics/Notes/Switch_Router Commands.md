@@ -25,8 +25,19 @@
 
 # Set the ipv6 address and subnet mask (in / suffix form) of the current interface
 	- Interface Configuration Mode
-	  - ipv6 address *ipv6 address*/*subnet mask*
-		
+		- ipv6 address *ipv6 address*/*subnet mask*
+
+# Enable the current interface
+	- Interface Configuration Mode
+ 		-no shutdown
+
+# Return to Privileged Executive Mode
+	- Any mode higher than Host Configuration Mode
+ 		- end
+
+# Save the current running configuration to the startup configuration
+	- Privileged Executive Mode
+ 		-copy running-config startup-config : copy run start
 
 # View position of boot environment variable
 	- Boot Loader Mode
