@@ -1,1 +1,1 @@
-#Command Syntax:
+#CommandSyntax:
