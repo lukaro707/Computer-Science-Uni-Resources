@@ -80,6 +80,10 @@
  		- transport input ssh
    		- login local
 
+## Check if SSH is enabled
+	- Privileged Executive Mode
+ 		- show ssh
+
 ## View status of ipv4 interfaces
 	- Privileged Executive Mode
  		- show ip interface brief
