@@ -1,5 +1,5 @@
-## Command Syntax:
-# Description of command and parameters
+# Command Syntax:
+## Description of command and parameters
 	- Command pre-requisites (mode, device, etc.)
 		- command *parameter* : alternatecommand *parameter*
 
