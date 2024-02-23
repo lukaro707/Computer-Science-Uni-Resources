@@ -1,20 +1,58 @@
 # Command Syntax:
 ## Description of command and parameters
 	- Command pre-requisites (mode, device, etc.)
-		- command *parameter* : alternatecommand *parameter*
+		- command *parameter* 
+  		- alternatecommand *parameter*
 
+# Mode Changes
 ## Enter Privileged Exectuive Mode
 	- User Exectuive Mode
 		- enable
 		
 ## Enter Host Configuration Mode
 	- Privileged Executive Mode
-		- configure terminal : config t
+		- configure terminal
+  		- config t
 
+## Return to Privileged Executive Mode
+	- Any mode higher than Host Configuration Mode
+ 		- end
+
+# Basic configuration
 ## Change the path of the boot environment variable to *file path*
 	- Host Configuration Mode
 		- boot *file path*
-		
+
+## Set the host name of the device
+	- Host Configuration Mode
+ 		- hostname *hostname*
+
+## Set an encrypted password on the enable command
+	- Host Configuration Mode
+ 		- enable secret *password*
+
+## Enter line configuration mode for console 0 (used to set password for device)
+	- Host Configuration Mode
+ 		- line console 0
+
+## Enter line configuration mode for vty 0-4 (used to set password for... I'm not sure actually)
+	- Host Configuration mode
+ 		- line vty 0 4
+
+## Set the login password of the current line(s)
+	- Line Configuration Mode
+ 		- password *password*
+   		  login
+
+## Encrypt all passwords
+	- Host Cofiguration Mode
+ 		- service password-encryption
+
+## Set a banner message of the day
+	- Host Configuration Mode
+ 		- banner motd #*message of the day*#
+
+# IP/Vlan configuration		
 ## Enter interface configuration mode for *interface*
 	- Host Configuration Mode
 		- inteface *interface*
@@ -47,10 +85,6 @@
 	- Host Configuration Mode on Switch
  		- ip default-gateway *default gateway*
 
-## Return to Privileged Executive Mode
-	- Any mode higher than Host Configuration Mode
- 		- end
-
 ## Verify SSH (Secure Shell) Support
 	- Privileged Executive Mode
  		- show ip ssh
@@ -71,7 +105,7 @@
 	- Global Configuration Mode
  		- username *username* secret *password*
 
-## Enter line configuration mode for lines 0-15
+## Enter line configuration mode for lines 0-15. Used in conjunction with the following command to enable ssh.
 	- Global Configuration Mode
  		- line vty 0 15
 
