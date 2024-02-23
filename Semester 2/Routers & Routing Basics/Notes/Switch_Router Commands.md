@@ -168,6 +168,14 @@
 	- Privileged Executive Mode
  		- show ipv6 interface brief
 
+## View the ipv4 routing table
+	- Privileged Executive Mode
+ 		- show ip route
+
+## View the ipv6 routing table
+	- Privileged Executive Mode
+ 		- show ipv6 route
+
 # Boot Loader Commands
 ## View position of boot environment variable
 	- Boot Loader Mode
