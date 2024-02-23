@@ -122,7 +122,7 @@
 	- Global Configuration Mode
  		- username *username* secret *password*
 
-## Enter line configuration mode for lines 0-15. Used in conjunction with the following command to enable ssh.
+## Enter line configuration mode for lines 0-15. Used in conjunction with the following commands to enable ssh.
 	- Global Configuration Mode
  		- line vty 0 15
 
