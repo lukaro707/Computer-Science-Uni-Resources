@@ -52,6 +52,10 @@
 	- Host Configuration Mode
  		- banner motd #*message of the day*#
 
+## Save the current running configuration to the startup configuration
+	- Privileged Executive Mode
+ 		- copy running-config startup-config : copy run start
+
 # IP/Vlan configuration		
 ## Enter interface configuration mode for *interface*
 	- Host Configuration Mode
@@ -64,6 +68,10 @@
 ## Set the ipv6 address and subnet mask (in / suffix form) of the current interface
 	- Interface Configuration Mode
 		- ipv6 address *ipv6 address*/*subnet mask*
+
+## Give the current interface a description
+	- Interface Configuration Mode
+ 		= description *description*
 
 ## Enable the current interface
 	- Interface Configuration Mode
@@ -85,6 +93,15 @@
 	- Host Configuration Mode on Switch
  		- ip default-gateway *default gateway*
 
+## View status of ipv4 interfaces
+	- Privileged Executive Mode
+ 		- show ip interface brief
+
+## View status of ipv6 interfaces
+	- Privileged Executive Mode
+ 		- show ipv6 interface brief
+
+# Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 	- Privileged Executive Mode
  		- show ip ssh
@@ -118,14 +135,7 @@
 	- Privileged Executive Mode
  		- show ssh
 
-## View status of ipv4 interfaces
-	- Privileged Executive Mode
- 		- show ip interface brief
-
-## View status of ipv6 interfaces
-	- Privileged Executive Mode
- 		- show ipv6 interface brief
-
+# Diagnostic Commands
 ## View the auto-MDIX settings of a specific interface
 	- Privileged Executive Mode
  		- show controllers ethernet-controller *interface* phy | include MDIX
@@ -154,10 +164,7 @@
 	- Privileged Executive Mode
  		- show mac-address-table : show mac address-table
 
-## Save the current running configuration to the startup configuration
-	- Privileged Executive Mode
- 		- copy running-config startup-config : copy run start
-
+# Boot Loader Commands
 ## View position of boot environment variable
 	- Boot Loader Mode
 		- set
