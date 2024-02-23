@@ -176,6 +176,10 @@
 	- Privileged Executive Mode
  		- show ipv6 route
 
+## Ping an device with the specified IP address
+	- Privileged Executive Mode
+ 		- ping *ip address*
+
 # Boot Loader Commands
 ## View position of boot environment variable
 	- Boot Loader Mode
