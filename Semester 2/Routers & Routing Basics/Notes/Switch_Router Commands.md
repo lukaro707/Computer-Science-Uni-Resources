@@ -176,6 +176,10 @@
 	- Privileged Executive Mode
  		- show ipv6 route
 
+## Set the number of lines of text displayed at once by the various "show" commands
+	- Privileged Executive Mode
+ 		- terminal lenght *lines*
+
 ## Ping an device with the specified IP address
 	- Privileged Executive Mode
  		- ping *ip address*
