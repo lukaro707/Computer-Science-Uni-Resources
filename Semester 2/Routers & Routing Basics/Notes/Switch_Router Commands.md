@@ -93,6 +93,10 @@
 	- Host Configuration Mode on Switch
  		- ip default-gateway *default gateway*
 
+## Create a loopback interface and enter interface configuration mode for the loopback interface
+	- Host Configuration Mode , Router
+ 		- ip address *ip address* *subnet mask*
+
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 	- Privileged Executive Mode
