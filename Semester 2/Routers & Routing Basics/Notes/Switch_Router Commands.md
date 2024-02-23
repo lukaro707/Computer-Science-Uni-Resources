@@ -93,14 +93,6 @@
 	- Host Configuration Mode on Switch
  		- ip default-gateway *default gateway*
 
-## View status of ipv4 interfaces
-	- Privileged Executive Mode
- 		- show ip interface brief
-
-## View status of ipv6 interfaces
-	- Privileged Executive Mode
- 		- show ipv6 interface brief
-
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 	- Privileged Executive Mode
@@ -163,6 +155,14 @@
 ## Display MAC address table
 	- Privileged Executive Mode
  		- show mac-address-table : show mac address-table
+
+## View status of ipv4 interfaces
+	- Privileged Executive Mode
+ 		- show ip interface brief
+
+## View status of ipv6 interfaces
+	- Privileged Executive Mode
+ 		- show ipv6 interface brief
 
 # Boot Loader Commands
 ## View position of boot environment variable
