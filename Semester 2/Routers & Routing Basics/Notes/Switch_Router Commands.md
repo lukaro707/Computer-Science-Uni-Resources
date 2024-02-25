@@ -42,7 +42,7 @@
 ## Set the login password of the current line(s)
 - Line Configuration Mode
 	- password *password*
-   	  login
+ 	login
 
 ## Encrypt all passwords
 - Host Cofiguration Mode
