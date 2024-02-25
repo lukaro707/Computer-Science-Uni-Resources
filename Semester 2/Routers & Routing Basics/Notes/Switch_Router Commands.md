@@ -41,7 +41,7 @@
 
 ## Set the login password of the current line(s)
 - Line Configuration Mode
-	- password *password*
+	- password *password* <br>
  	login
 
 ## Encrypt all passwords
