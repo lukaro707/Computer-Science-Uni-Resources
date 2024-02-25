@@ -212,6 +212,10 @@
 - Privileged Executive Mode
 	- ping *ip-address*
 
+## Show various diagnostic indormation about vlans
+- Privileged Executive Mode
+	- show vlan *[__brief__ | __id__ vlan-id | __name__ vlan-name | __summary__]* 
+
 # Boot Loader Commands
 ## View position of boot environment variable
 - Boot Loader Mode
