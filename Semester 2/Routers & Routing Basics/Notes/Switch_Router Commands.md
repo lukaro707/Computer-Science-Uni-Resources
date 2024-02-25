@@ -97,6 +97,14 @@
 	- Host Configuration Mode , Router
  		- ip address *ip address* *subnet mask*
 
+# Create a VLAN with a valid ID number if no vlans with that ID already exist, and enter vlan configuration mode for that vlan
+	- Host Configuration Mode
+ 		- vlan *vlan-id*
+
+# Give a vlan a specific name
+	- Vlan Configuration Mode
+ 		- name *name*
+
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 	- Privileged Executive Mode
