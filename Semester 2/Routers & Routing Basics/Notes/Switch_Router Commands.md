@@ -214,7 +214,11 @@
 
 ## Show various diagnostic indormation about vlans
 - Privileged Executive Mode
-	- show vlan *[__brief__ | __id__ vlan-id | __name__ vlan-name | __summary__]* 
+	- show vlan *[__brief__ | __id__ vlan-id | __name__ vlan-name | __summary__]*
+
+## Show data about vlans on a specific interface
+- Privileged Executive Mode
+	- show interfaces *interface-id* switchport
 
 # Boot Loader Commands
 ## View position of boot environment variable
