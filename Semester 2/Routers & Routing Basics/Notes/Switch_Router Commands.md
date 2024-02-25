@@ -114,6 +114,14 @@
  - Interface Configuration Mode
 	- switchport access vlan *vlan-id*
 
+## Enables Quality of Service classification on a specific interface, used if that interface is going to have a VOIP VLAN
+- Interface Configuration Mode
+	- mls qos trust cos
+
+## Sets the current interfacet to have a VOIP connection on a specified vlan
+- Interface Configuration Mode
+	- switchport voice vlan *vlan-id*
+
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 - Privileged Executive Mode
