@@ -159,11 +159,13 @@
 
 ## Display Current Startup configurations
 - Privileged Executive Mode
-	- show startup-config : show start
+	- show startup-config
+ 	- show start
 
 ## Display current running configuration
 - Privileged Executive Mode
-	- show running-config : show run
+	- show running-config
+ 	- show run
 
 ## Display information about flash file system
 - Privileged Executive Mode
