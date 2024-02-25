@@ -138,6 +138,14 @@
 - Interface Configuration Mode
 	- no switchport access vlan
 
+ ## Set the native vlan for a Interface set to be a vlan trunk
+ - Interface Configuration Mode
+	- switchport trunk native vlan *vlan-id*
+
+## Specify a list of vlans to be allowed on a vlan trunk (vlan-list items are seperated by a comma)
+- Interface Configuration Mode
+	- switchport trunk allowed vlan *vlan-list*
+
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 - Privileged Executive Mode
