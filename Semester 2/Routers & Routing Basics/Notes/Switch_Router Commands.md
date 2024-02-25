@@ -19,6 +19,18 @@
 	- end
 
 # Basic configuration
+## Delete a specific vlan
+- Global Configuration Mode
+	- no vlan *vlan-id*
+
+## Delete vlan.dat file
+- Privileged Executive Mode
+  	- delete flash:vlan.dat
+  	- delete vlan.dat
+
+## Delete startup-config
+- Privileged Executive Mode
+	- erase startup-config
 ## Change the path of the boot environment variable to *file path*
 - Host Configuration Mode
 	- boot *file-path*
@@ -121,6 +133,10 @@
 ## Sets the current interfacet to have a VOIP connection on a specified vlan
 - Interface Configuration Mode
 	- switchport voice vlan *vlan-id*
+
+## Return a specific interface to the default vlan (vlan 1)
+- Interface Configuration Mode
+	- no switchport access vlan
 
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
