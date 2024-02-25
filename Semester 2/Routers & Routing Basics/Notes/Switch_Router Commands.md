@@ -133,7 +133,7 @@
 ## Enable SSH on current lines
 - Line Configuration Mode
 	- transport input ssh <br>
-   	  login local
+ 	login local
 
 ## Check if SSH is enabled
 - Privileged Executive Mode
