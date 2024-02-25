@@ -132,7 +132,7 @@
 
 ## Enable SSH on current lines
 - Line Configuration Mode
-	- transport input ssh
+	- transport input ssh <br>
    	  login local
 
 ## Check if SSH is enabled
