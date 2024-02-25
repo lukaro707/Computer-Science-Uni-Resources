@@ -21,7 +21,7 @@
 # Basic configuration
 ## Change the path of the boot environment variable to *file path*
 - Host Configuration Mode
-	- boot *file path*
+	- boot *file-path*
 
 ## Set the host name of the device
 - Host Configuration Mode
@@ -54,7 +54,8 @@
 
 ## Save the current running configuration to the startup configuration
 - Privileged Executive Mode
-	- copy running-config startup-config : copy run start
+	- copy running-config startup-config
+ 	- copy run start
 
 # IP/Vlan configuration		
 ## Enter interface configuration mode for *interface*
@@ -63,11 +64,11 @@
 		
 ## Set the ipv4 address and subnet mask of the current interface
 - Interface Configuration Mode
-	- ip address *ip address* *subnet mask*
+	- ip address *ip-address* *subnet-mask*
 
-## Set the ipv6 address and subnet mask (in / suffix form) of the current interface
+## Set the ipv6 address and subnet mask (in / prefix form) of the current interface
 - Interface Configuration Mode
-	- ipv6 address *ipv6 address*/*subnet mask*
+	- ipv6 address *ipv6-address*/*subnet-prefix*
 
 ## Give the current interface a description
 - Interface Configuration Mode
@@ -83,7 +84,7 @@
 
 ## Set the speed of the current interface in Mbps (Megabits per second)
 - Interface Configuration Mode
-	- speed *speed value*
+	- speed *speed*
 
 ## Set the current interface to use the auto-MDIX feature
 - Interface Configuration Mode
@@ -91,11 +92,11 @@
 
 ## Set the default gateway of a switch
 - Host Configuration Mode on Switch
-	- ip default-gateway *default gateway*
+	- ip default-gateway *default-gateway*
 
 ## Create a loopback interface and enter interface configuration mode for the loopback interface
 - Host Configuration Mode , Router
-	- ip address *ip address* *subnet mask*
+	- ip address *ip-address* *subnet-mask*
 
 ## Create a VLAN with a valid ID number if no vlans with that ID already exist, and enter vlan configuration mode for that vlan
 - Host Configuration Mode
@@ -105,6 +106,14 @@
 - Vlan Configuration Mode
 	- name *name*
 
+## Set a interface to a specific vlan mode (acces, trunk, dynamic desirable, dynamic auto)
+- Interface Configuration Mode
+	- switchport mode *mode*
+
+ ## Assign an access mode interface to a specific vlan
+ - Interface Configuration Mode
+	- switchport access vlan *vlan-id*
+
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 - Privileged Executive Mode
@@ -112,7 +121,7 @@
 
 ## Configure IP domain-name
 - Privileged Executive Mode
-	- ip domain-name *domain name*
+	- ip domain-name *domain-name*
 
 ## Move to SSH (Seure Shell) Version Two
 - Global Configuration Mode
@@ -166,7 +175,8 @@
 
 ## Display MAC address table
 - Privileged Executive Mode
-	- show mac-address-table : show mac address-table
+	- show mac-address-table
+ 	- show mac address-table
 
 ## View status of ipv4 interfaces
 - Privileged Executive Mode
@@ -190,7 +200,7 @@
 
 ## Ping an device with the specified IP address
 - Privileged Executive Mode
-	- ping *ip address*
+	- ping *ip-address*
 
 # Boot Loader Commands
 ## View position of boot environment variable
@@ -207,5 +217,5 @@
 
 ## Change the path of the boot environment variable to *file path*
 - Boot Loader Mode
-	- BOOT=flash:*file path*
+	- BOOT=flash:*file-path*
 		
