@@ -152,7 +152,11 @@
 
 ## Set a vlan trunk to the default native vlan (vlan 1)
 - Interface Configuration Mode
-	- no switchport trunk native vlan 
+	- no switchport trunk native vlan
+
+## Disable dynamic trunking protocol on an interface set to be a vlan trunk
+- Interface Configuration Mode
+	- switchport nonegotiate
 
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
@@ -251,6 +255,10 @@
 ## Show data about vlans on a specific interface
 - Privileged Executive Mode
 	- show interfaces *interface-id* switchport
+
+## Show dynamic trunking protocol information about a specific interface
+- Privileged Executive Mode
+	- show dtp inteface *interface-id*
 
 # Boot Loader Commands
 ## View position of boot environment variable
