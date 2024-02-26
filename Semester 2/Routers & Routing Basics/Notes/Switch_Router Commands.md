@@ -285,6 +285,10 @@
 - Privileged Executive Mode
 	- show interfaces *interface-id* switchport
 
+## Show data about vlan trunks on a specific interface
+- Privileged Executive Mode
+	- show interfaces trunk
+
 ## Show dynamic trunking protocol information about a specific interface
 - Privileged Executive Mode
 	- show dtp inteface *interface-id*
