@@ -158,6 +158,18 @@
 - Interface Configuration Mode
 	- switchport nonegotiate
 
+## Create a subinterface of a specified interface, and enter interface configuration mode for that subinterface (used in router-on-a-stick vlan routing)
+- Global Configuration Mode, Router
+	- interface *interface_id*.*subinterface_id*
+
+## Configures a subinterface to respond to traffic from a specified vlan.
+- Interface Configuration Mode, subinterface, Router
+	- encapsulation dot1q *vlan_id* *[ | native]*
+
+## Configure the IPv4 address on a subinterface. This IP address serves as the default gateway for vlans on said subinterface
+- Interface Configuration Mode, subinterface, Router
+	- ip address *ip_address* *subnet_mask*
+
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 - Privileged Executive Mode
