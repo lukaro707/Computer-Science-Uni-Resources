@@ -170,6 +170,23 @@
 - Interface Configuration Mode, subinterface, Router
 	- ip address *ip_address* *subnet_mask*
 
+## Configure the an interface to not be a vlan interface. Used on interfaces connecting a layer 3 switch to a routerF
+- Interface Configuration Mode, Layer 3 Switch
+	- no switchport
+
+## Enable IP routing on a layer 3 switch
+- Global Configuration Mode, layer 3 switch
+	- ip route
+	- ip routing
+
+## Enter router configuration mode on a layer 3 switch
+- Global Configuration Mode, layer 3 switch
+	- rotuer ospf 10
+
+ ## Advertise the vlan with a specific IP address to adjacent routers from a layer 3 switch
+ - Rotuer Configuration Mode, layer 3 switch
+   	- network 192.168.10.0 0.0.0.255 area 0
+
 # Secure Shell Commands
 ## Verify SSH (Secure Shell) Support
 - Privileged Executive Mode
@@ -271,6 +288,7 @@
 ## Show dynamic trunking protocol information about a specific interface
 - Privileged Executive Mode
 	- show dtp inteface *interface-id*
+
 
 # Boot Loader Commands
 ## View position of boot environment variable
