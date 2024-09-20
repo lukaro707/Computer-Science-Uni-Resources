@@ -292,7 +292,10 @@
 ## Show dynamic trunking protocol information about a specific interface
 - Privileged Executive Mode
 	- show dtp inteface *interface-id*
-
+ 
+ ## Displays status and statistics information on the network interfaces of the switch
+- Privileged Executive Mode
+  	- show interfaces *interface-id*
 
 # Boot Loader Commands
 ## View position of boot environment variable
