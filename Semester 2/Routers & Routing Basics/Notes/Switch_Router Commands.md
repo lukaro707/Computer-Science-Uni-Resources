@@ -108,7 +108,7 @@
 
 ## Create a loopback interface and enter interface configuration mode for the loopback interface
 - Host Configuration Mode , Router
-	- ip address *ip-address* *subnet-mask*
+	- interface loopback 0
 
 ## Create a VLAN with a valid ID number if no vlans with that ID already exist, and enter vlan configuration mode for that vlan
 - Host Configuration Mode
